@@ -4,11 +4,10 @@ function Header() {
     return (
         // Conteudo a ser exibido
         // JSX = html + xml (html com css dentro do javascript)
-        <header className={styles.Header}>
+        <header className={styles.header}>
             <span> Aula Senac </span>
             <nav>
-                <a href="#"> Home</a>
-                <a href="#"> Senac</a>
+                
             </nav>
         </header>
     )

@@ -1,0 +1,13 @@
+.footer {
+  position: fixed; /* Ou 'absolute', dependendo do comportamento desejado */
+  bottom: 0;       /* Fixa na parte inferior */
+  width: 100%;     /* Ocupa toda a largura */
+  /* Adicione padding/height conforme necessário */
+  background-color: black;
+  border-top: solid red 10px;
+  color: white;
+  text-align: center;
+}
+
+
+
