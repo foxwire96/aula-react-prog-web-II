@@ -1,0 +1,19 @@
+.video {
+  background: #222;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.video img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.video:hover {
+  transform: scale(1.05);
+}
+

@@ -2,10 +2,8 @@ import styles from "./Header.module.css";
 
 function Header() {
     return (
-        // Conteudo a ser exibido
-        // JSX = html + xml (html com css dentro do javascript)
         <header className={styles.header}>
-            <span> Aula Senac </span>
+            <span> No one sleeps in Tokyo </span>
             <nav>
                 
             </nav>

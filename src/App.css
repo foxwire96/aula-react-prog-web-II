@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.App {
+  
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px; /* espaço entre banner e cards */
+  
+  
+}

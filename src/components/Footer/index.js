@@ -2,10 +2,10 @@ import styles from "./Footer.module.css";
 
 function Footer() {
     return (
-        // Conteudo a ser exibido
-        // JSX = html + xml (html com css dentro do javascript)
         <footer className={styles.footer}>
-           <h1>MEU FOOTER</h1>
+           <img 
+           src = "https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/optimized/4X/7/b/8/7b8dd7b2756d8c008e7482a4610e67a108244e59_2_690x250.png">
+           </img>
         </footer>
     )
 }
