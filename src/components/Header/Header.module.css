@@ -2,8 +2,27 @@
     background-color: #000;
     border-bottom: 5px solid #f44336;
     color: white;
-    
+    padding-top: 10px;
 }
 
+a:link {
+  color: blue;
+  
+}
 
+a:visited {
+  color: purple;
+}
 
+a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+a:active {
+  color: green;
+}
+
+a {
+    padding-left: 20px;
+}

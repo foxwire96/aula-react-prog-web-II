@@ -1,0 +1,22 @@
+.Container {
+    display: flex;
+  align-items: center;      /* centraliza verticalmente */
+  justify-content: center;  /* centraliza horizontalmente */
+  gap: 30px;                /* espaço entre imagem e texto */
+  width: 100%;
+  max-width: 1000px;        /* limite de largura */
+  margin: 40px auto;
+  color: aqua;
+}
+
+
+.Container img {
+    width: 350px;             /* diminui a imagem */
+    height: auto;           
+        
+}
+
+.Container h2 {
+    font-size: 28px;
+  margin-bottom: 10px;
+}
