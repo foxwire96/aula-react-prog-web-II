@@ -1,8 +1,13 @@
-
-import "./Home.module.css";
+import Banner from "../../components/Banner";
+import Cards from "../../components/Cards";
+import Container from "../../components/Container";
 
 export default function Home() {
-  
-
-  
+  return (
+    <>
+      <Banner />
+      <Container />
+      <Cards />
+    </>
+  );
 }
