@@ -1,13 +1,21 @@
-import Banner from "../../components/Banner";
-import Cards from "../../components/Cards";
-import Container from "../../components/Container";
+import "./Home.module.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+
+  const navigate = useNavigate();
+
+  function irParaWatch() {
+    navigate("/watch");
+  }
+
   return (
-    <>
-      <Banner />
-      <Container />
-      <Cards />
-    </>
+
+    
+    <button onClick={() => navigate("/watch")}
+>
+
+    </button>
   );
 }
+

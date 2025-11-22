@@ -2,31 +2,46 @@ import styles from "./Watch.module.css";
 import Cards from "../../components/Cards";
 
 export default function Watch() {
+    const videos = [
+        {
+            id: '1',
+            title: 'Toda a VERDADE Sobre o LÍDER do 湾岸MIDNIGHT CLUB e o BLACKBIRD Porsche 911',
+            thumbnailUrl: 'https://img.youtube.com/vi/eda66UvhuRE/maxresdefault.jpg',
+            videoUrl: 'https://www.youtube.com/watch?v=eda66UvhuRE',
+        },
+        {
+            id: '2',
+            title: 'Toda VERDADE Sobre as Corridas de Rua PROIBIDAS no Japão',
+            thumbnailUrl: 'https://img.youtube.com/vi/gG_2vgn9FvU/maxresdefault.jpg', 
+            // GARANTA QUE ESTA URL ESTEJA CORRETA:
+            videoUrl: 'https://www.youtube.com/watch?v=gG_2vgn9FvU',
+        },
+        {
+            id: '3',
+            title: 'Mid Night Club: The story of the street racers who did things differently',
+            thumbnailUrl: 'https://img.youtube.com/vi/lRt56Y9JMEg/maxresdefault.jpg', 
+            // GARANTA QUE ESTA URL ESTEJA CORRETA:
+            videoUrl: 'https://www.youtube.com/watch?v=lRt56Y9JMEg',
+        }
+    ];
 
-  const videos = [
-    {
-      id: 1,
-      title: "",
-      thumbnail: "",
-    },
-    {
-      id: 2,
-      title: "",
-      thumbnail: "",
-    },
-    {
-      id: 3,
-      title: ")",
-      thumbnail: "",
-    }
-  ];
-
-  return (
-    <div className={styles.watchPage}>
-      <h1 className={styles.title}>Página Watch</h1>
-
-      {/* Usando o componente Cards */}
-      <Cards videos={videos} />
-    </div>
-  );
+    return (
+        <div className={styles.watchPage}>
+            {videos.map((video) => (
+                <Cards 
+                    key={video.id} 
+                    title={video.title} 
+                    thumbnail={video.thumbnailUrl} 
+                    
+                    // CORREÇÃO E IMPLEMENTAÇÃO DO CLICK:
+                    onClick={() => {
+                        // Esta é a função que redireciona o usuário para o link do vídeo
+                        window.location.href = video.videoUrl;
+                        // Você pode adicionar um console.log para testar:
+                        console.log('Redirecionando para:', video.videoUrl); 
+                    }}
+                />
+            ))}
+        </div>
+    );
 }
