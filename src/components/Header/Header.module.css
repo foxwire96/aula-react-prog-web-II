@@ -26,3 +26,14 @@ a:active {
 a {
     padding-left: 20px;
 }
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
